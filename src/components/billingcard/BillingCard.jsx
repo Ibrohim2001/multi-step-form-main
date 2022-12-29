@@ -17,6 +17,7 @@ const BillingCard = ({card, active, setActive}) => {
       features: card.extra,
     });
     setActive(card.id)
+    console.log(plan)
   }
 
 

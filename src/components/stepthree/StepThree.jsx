@@ -26,7 +26,7 @@ const StepThree = () => {
   ];
 
   const navigate = useNavigate();
-  const [error, setError] = useState(false)
+  // const [error, setError] = useState(false)
   const [options, setOptions] = useState([]);
   const [selection, setSelection] = useState({
     id: null,
@@ -58,7 +58,7 @@ const StepThree = () => {
             type="submit"
             onClick={() => {
               if(options.length)  navigate('/step-four');
-              if(!options.length) setError(true)
+              // if(!options.length) setError(true)
             }}
           >
             Next Step

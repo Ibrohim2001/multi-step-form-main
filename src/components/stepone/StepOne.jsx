@@ -14,7 +14,6 @@ const StepOne = () => {
     nameError: "",
     emailError: "",
     phoneError: "",
-    relocate: false
   });
 
   const handleChange = (e) => {
@@ -27,7 +26,6 @@ const StepOne = () => {
    let nameError = "";
    let emailError = "";
    let phoneError = "";
-   let relocate = false;
 
       if(!values.name) {
         nameError = "This field is required";

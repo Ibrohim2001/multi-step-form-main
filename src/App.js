@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import StepOne from './components/stepone/StepOne';
+import StepTwo from './components/steptwo/StepTwo';
+import Sidebar from './components/sidebar/Sidebar';
+import StepThree from './components/stepthree/StepThree';
+import StepFour from './components/stepfour/StepFour';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="app">
+      <Router>
+        <Sidebar/>
+        <Routes>
+          <Route path='/' element={<StepOne/>}/>
+          <Route path='/step-two' element={<StepTwo/>}/>
+          <Route path='/step-three' element={<StepThree/>}/>
+          <Route path='/step-four' element={<StepFour/>}/>
+        </Routes>
+      </Router>
+    </main>
   );
 }
 

@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto 2rem auto;
+  padding: 0;
+}
+.thank_img {
+  margin: 1rem 0;
+}
+.subtitle {
+  width: 85%;
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+.subscription {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--magnolia);
+  border-radius: 5px;
+}
+.subscription_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+.subscription_price,
+.subscription_title {
+  color: var(--marine-blue);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.change_plan,
+.extra_name,
+.extra_price,
+.total > p {
+  color: var(--cool-gray);
+  font-size: 0.9rem;
+}
+.subscription_details {
+  margin: 1rem 0;
+}
+.extra_services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.extra_price {
+  color: var(--marine-blue);
+}
+.total {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total .title {
+  color: var(--purplish-blue);
+  font-size: 1.5rem;
+}
+.next_btn {
+  background-color: var(--purplish-blue);
+}
